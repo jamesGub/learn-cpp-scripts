@@ -15,13 +15,18 @@ int main() {
     std::cout << "Enter the password length: ";
     std::cin >> passwordLength;
 
+    std::string username;
+    std::cout << "Enter the username: ";
+    std::cin >> username;
+
     std::string password;
     for (int i = 0; i < passwordLength; ++i) { 
         password += generateRandomCharacter();
 
     }
 
-    std::cout << "Here is your new password: " << password << std::endl;
+    std::cout << "Here is your username: " << username << std::endl;
+    std::cout << "Here is your password: " << password << std::endl;
 
     return 0;
 }
